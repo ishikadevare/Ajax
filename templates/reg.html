@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Registration Form</title>
+</head>
+
+<body>
+  <h1>Registration Form</h1>
+  <form id="registration-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="college">College:</label>
+    <input type="text" id="college" name="college" required><br>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirm-password" name="confirm-password" required><br>
+    <input type="submit" value="Register">
+  </form>
+  <div id="registration-status"></div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
